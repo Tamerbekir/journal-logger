@@ -57,10 +57,10 @@ document.getElementById('thirdMoodBtn').addEventListener('click', function () {
 })
 
 document.getElementById('dateBtn').addEventListener('click', function () {
-    const dateValue = document.getElementById('dateLogged').value;
+    const dateValue = document.getElementById('date').value;
     localStorage.setItem('date', dateValue);
     const dateLogged = document.createElement('p')
-    const dateLoggedLocation = document.getElementById('date')
+    const dateLoggedLocation = document.getElementById('dateLogged')
     dateLoggedLocation.innerHTML = 'Logged'
     dateLoggedLocation.appendChild(dateLogged)
     if (dateValue === "") {
