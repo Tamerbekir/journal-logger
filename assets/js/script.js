@@ -20,7 +20,7 @@ document.getElementById('firstMoodBtn').addEventListener('click', function () {
         //grabbing the ID in which is being trigged from
         const firstLogErrorSection = document.getElementById('firstMoodLogged')
         //the user will get this message if the leave the text box empty (firstMoodValue === "")
-        firstLogErrorSection.innerHTML = 'Cannot leave bank.'
+        firstLogErrorSection.innerHTML = 'Cannot leave bank'
         //the user will see the message append to the page instead of it saying "logged"
         firstLogErrorSection.appendChild(firstLogError)
     }
@@ -36,7 +36,7 @@ document.getElementById('secondMoodBtn').addEventListener('click', function () {
     if (secondMoodValue === "") {
         const secondLogError = document.createElement('p')
         const secondLogErrorSection = document.getElementById('secondMoodLogged')
-        secondLogErrorSection.innerHTML = 'Cannot leave bank.'
+        secondLogErrorSection.innerHTML = 'Cannot leave bank'
         secondLogErrorSection.appendChild(secondLogError)
     }
 })
@@ -51,7 +51,7 @@ document.getElementById('thirdMoodBtn').addEventListener('click', function () {
     if (thirdMoodValue === "") {
         const thirdLogError = document.createElement('p')
         const thirdLogErrorSection = document.getElementById('thirdMoodLogged')
-        thirdLogErrorSection.innerHTML = 'Cannot leave bank.'
+        thirdLogErrorSection.innerHTML = 'Cannot leave bank'
         thirdLogErrorSection.appendChild(thirdLogError)
     }
 })
@@ -66,7 +66,7 @@ document.getElementById('dateBtn').addEventListener('click', function () {
     if (dateValue === "") {
         const dateValueError = document.createElement('p')
         const dateValueSection = document.getElementById('dateLogged')
-        dateValueSection.innerHTML = 'Cannot leave bank.'
+        dateValueSection.innerHTML = 'Date cannot leave bank.'
         dateValueSection.appendChild(dateValueError)
     }
 });
@@ -74,58 +74,3 @@ document.getElementById('dateBtn').addEventListener('click', function () {
 document.getElementById('viewJournal').addEventListener('click', function () {
     window.location.replace('./journal.html')
 })
-
-//!Chat GPT Version
-// document.getElementById('firstMoodBtn').addEventListener('click', function () {
-//     const firstMoodValue = document.getElementById('firstMood').value;
-//     if (firstMoodValue === "") {
-//         displayError('firstMoodLogged', 'Cannot leave blank.');
-//     } else {
-//         localStorage.setItem('firstMood', firstMoodValue);
-//         displaySuccess('firstMoodLogged');
-//     }
-// });
-
-// document.getElementById('secondMoodBtn').addEventListener('click', function () {
-//     const secondMoodValue = document.getElementById('secondMood').value;
-//     if (secondMoodValue === "") {
-//         displayError('secondMoodLogged', 'Cannot leave blank.');
-//     } else {
-//         localStorage.setItem('secondMood', secondMoodValue);
-//         displaySuccess('secondMoodLogged');
-//     }
-// });
-
-// document.getElementById('thirdMoodBtn').addEventListener('click', function () {
-//     const thirdMoodValue = document.getElementById('thirdMood').value;
-//     if (thirdMoodValue === "") {
-//         displayError('thirdMoodLogged', 'Cannot leave blank.');
-//     } else {
-//         localStorage.setItem('thirdMood', thirdMoodValue);
-//         displaySuccess('thirdMoodLogged');
-//     }
-// });
-
-// document.getElementById('dateBtn').addEventListener('click', function () {
-//     const dateValue = document.getElementById('date').value;
-//     if (dateValue === "") {
-//         displayError('dateLogged', 'Cannot leave blank.');
-//     } else {
-//         localStorage.setItem('date', dateValue);
-//         displaySuccess('dateLogged');
-//     }
-// });
-
-// document.getElementById('viewJournal').addEventListener('click', function () {
-//     window.location.replace('./journal.html');
-// });
-
-// function displayError(elementId, message) {
-//     const errorElement = document.getElementById(elementId);
-//     errorElement.innerHTML = message;
-// }
-
-// function displaySuccess(elementId) {
-//     const successElement = document.getElementById(elementId);
-//     successElement.innerHTML = 'Logged';
-// }

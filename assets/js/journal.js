@@ -1,16 +1,18 @@
-let clear = document.getElementById("clear");
-let goBack = document.getElementById("goBack");
 
-if (clear) {
-    addEventListener("click", function () {
+
+
+    document.getElementById("clear").addEventListener("click", function () {
         localStorage.clear();
         location.reload();
+            const clearEntries = document.createElement('p')
+            const clearEntriesSection = document.getElementById('clearedEntries')
+            clearEntriesSection.innerHTML = 'Entries cleared!'
+            clearEntriesSection.appendChild(clearEntries)
+        
     });
-}
 
-if (goBack) {
-    addEventListener('click', function(){
+document.getElementById("goBack").addEventListener('click', function(){
         window.location.replace('./index.html');
     });
-}
+
 

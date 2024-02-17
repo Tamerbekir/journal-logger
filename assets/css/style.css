@@ -8,8 +8,12 @@ p {
 }
 
 #firstMood, #secondMood, #thirdMood, #date {
+    color:rgb(86, 86, 86);
+    margin: .5%;
     width: 300px;
     height: 60px;
+    border-radius: 10px 10px 10px 10px;
+    border-color: rgb(88, 65, 36);
 }
 
 #date {
@@ -23,6 +27,8 @@ button {
     font-size: 15px;
     text-align: center;
     margin-top: 10px;
+    border: solid black 2px;
+    border-radius: 10px 10px 10px 10px;
 }
 
 #viewJournal {
@@ -31,10 +37,18 @@ button {
     width: 200px;
 }
 
-#firstMoodLogged, #secondMoodLogged, #thirdMoodLogged, #dateLogged {
+#firstMoodLogged, #secondMoodLogged, #thirdMoodLogged, #dateLogged, #clear, #clearedEntries {
     color: red;
+    font-size: 15px;
 }
 
 #goBack, #clear {
     width: 130px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.firstMoodAtr, .secondMoodAtr, .thirdMoodAtr, .dateAtr {
+    margin: 1%;
+    border: solid black 2px;
+    border-radius: 10px 10px 10px 10px;
 }
