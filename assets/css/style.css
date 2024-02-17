@@ -1,0 +1,40 @@
+body {
+    background-color: beige;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+}
+
+#firstMood, #secondMood, #thirdMood, #date {
+    width: 500px;
+    height: 50px;
+}
+
+#date {
+    height: 30px;
+    width: 120px;
+}
+
+button {
+    height: 30px;
+    width: 70px;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#viewJournal {
+    right: 100px;
+    height: 30px;
+    width: 200px;
+}
+
+#firstMoodLogged, #secondMoodLogged, #thirdMoodLogged, #dateLogged {
+    color: red;
+}
+
+#goBack, #clear {
+    width: 130px;
+}
