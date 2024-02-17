@@ -3,12 +3,33 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./assets/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Journal Logger</title>
+    <title>Journal (mood) Logger</title>
+    <h1>Welcome to the Mood Logger</h1>
 </head>
-<body>
-    
+    <body>
+            <p>How are you feeling right now?</p>
+            <input id="firstMood" type="text" placeholder="Enter your mood here...">
+            <br>
+            <button id="firstMoodBtn">Add</button>
+            <p id="firstMoodLogged"></p>
+
+            <p>What made you feel this way?</p>
+            <input id="secondMood" type="text" placeholder="Enter your mood here..."> 
+            <br>
+            <button id="secondMoodBtn">Add</button>
+            <p id="SecondMoodLogged"></p>         
+
+            <p>What are you going to do to change it?</p>
+            <input id="thirdMood" type="text" placeholder="Enter your mood here..."> 
+            <br>
+            <button id="thirdMoodBtn">Add</button>   
+            <p id="thirdMoodLogged"></p>   
+              
+            <input id="dateLogged" type="date">
+            <button id="dateBtn">Add</button>        
+        </div>
 
 
-    
-</body>
+<script src="./assets/js/script.js"></script>
+    </body>
 </html>
