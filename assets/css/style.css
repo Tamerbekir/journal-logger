@@ -39,7 +39,7 @@ button {
 
 #firstMoodLogged, #secondMoodLogged, #thirdMoodLogged, #dateLogged, #clear, #clearedEntries {
     color: red;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 #goBack, #clear {
@@ -47,8 +47,17 @@ button {
     border-radius: 10px 10px 10px 10px;
 }
 
-.firstMoodAtr, .secondMoodAtr, .thirdMoodAtr, .dateAtr {
+.firstMoodAtr, .secondMoodAtr, .thirdMoodAtr {
     margin: 1%;
     border: solid black 2px;
     border-radius: 10px 10px 10px 10px;
+}
+
+.dateAtr {
+    margin-top: 6%;
+    margin-bottom: 4%;
+}
+
+#dateBtn {
+    margin: -14px;
 }

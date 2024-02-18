@@ -4,7 +4,7 @@ document.getElementById('firstMoodBtn').addEventListener('click', function () {
     let firstMoodValue = document.getElementById('firstMood').value;
     //set the firstMood Value to local storage with key "firstMoodValue" (the variable you made above).
     //the first item stored is the key, which is the text of your choice. The second is the value, which is being pulled from the value element id
-    localStorage.setItem('firstMood', firstMoodValue);
+    localStorage.setItem('How are you feeling right now?', firstMoodValue);
     //Created a variable that creates the P element inside the HTML
     const firstLogged = document.createElement('p')
     //created a variable that grabs the ID in which I want the element to show up once it is pressed
@@ -28,7 +28,7 @@ document.getElementById('firstMoodBtn').addEventListener('click', function () {
 
 document.getElementById('secondMoodBtn').addEventListener('click', function () {
     const secondMoodValue = document.getElementById('secondMood').value
-    localStorage.setItem('secondMood', secondMoodValue)
+    localStorage.setItem('What made you feel this way?', secondMoodValue)
     const secondLogged = document.createElement('p')
     const secondLoggedLocation = document.getElementById('secondMoodLogged')
     secondLoggedLocation.innerHTML = 'Logged'
@@ -43,7 +43,7 @@ document.getElementById('secondMoodBtn').addEventListener('click', function () {
 
 document.getElementById('thirdMoodBtn').addEventListener('click', function () {
     const thirdMoodValue = document.getElementById('thirdMood').value
-    localStorage.setItem('thirdMood', thirdMoodValue)
+    localStorage.setItem('What are you going to do to change it, or keep it going?', thirdMoodValue)
     const thirdLogged = document.createElement('p')
     const thirdLoggedLocation = document.getElementById('thirdMoodLogged')
     thirdLoggedLocation.innerHTML = 'Logged'
@@ -58,7 +58,7 @@ document.getElementById('thirdMoodBtn').addEventListener('click', function () {
 
 document.getElementById('dateBtn').addEventListener('click', function () {
     const dateValue = document.getElementById('date').value;
-    localStorage.setItem('date', dateValue);
+    localStorage.setItem('Date', dateValue);
     const dateLogged = document.createElement('p')
     const dateLoggedLocation = document.getElementById('dateLogged')
     dateLoggedLocation.innerHTML = 'Logged'
